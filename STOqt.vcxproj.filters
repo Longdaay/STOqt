@@ -40,13 +40,27 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DPWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="DPWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
     <QtUic Include="ControlWindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="DiagnosticPostWindow.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="DPWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ControlWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>
