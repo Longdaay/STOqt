@@ -9,7 +9,13 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = Q_NULLPTR);
+    void openControlWindow();
+    void openDPWindow();
+    void openCarLogWindow();
 
 private:
     Ui::MainWindowClass ui;
+
+private slots:
+
 };
