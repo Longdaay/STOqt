@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>310</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>ControlWindow</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="FirstKitButton">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -26,11 +26,11 @@
     <string>Записать авто на диагностику № 1</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="BothKitButton">
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>200</y>
+     <y>190</y>
      <width>231</width>
      <height>61</height>
     </rect>
@@ -39,7 +39,7 @@
     <string>Записать авто на диагностику № 1 и № 2</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="SecondKitButton">
    <property name="geometry">
     <rect>
      <x>80</x>
