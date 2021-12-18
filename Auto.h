@@ -23,7 +23,8 @@ private:
 	int autoId;
 	ESelectKit usedKits;
 	ESelectKit currentKit;
-	int timeKitRemaning = 10;
-	int kitTimer = 10;
+	int timeKitRemaning = 0;
+	int kitTimer = 0;
+
 };
 

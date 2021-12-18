@@ -125,7 +125,20 @@
      <height>191</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="DPGridLayout"/>
+   <layout class="QGridLayout" name="DPGridLayout" rowstretch="0" columnstretch="1">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>150</number>
+    </property>
+    <property name="spacing">
+     <number>10</number>
+    </property>
+   </layout>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

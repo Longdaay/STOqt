@@ -52,12 +52,18 @@
     <ClCompile Include="DiagnosticPost.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CarLogWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="DPWindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="ControlWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CarLogWindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -68,7 +74,7 @@
     <QtMoc Include="ControlWindow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Auto.h">
+    <QtMoc Include="CarLogWindow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -77,6 +83,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DiagnosticPost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Auto.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

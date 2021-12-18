@@ -43,7 +43,7 @@ void Auto::removeUsedKit(ESelectKit removedKit)
 bool Auto::decreaseTimeKit()
 {
 	timeKitRemaning--;
-	return timeKitRemaning != 0;
+	return timeKitRemaning == 0;
 }
 
 void Auto::setCurrentKit(ESelectKit selectedKit, int timerTime)
