@@ -15,7 +15,6 @@ MainWindow::MainWindow(QWidget *parent)
     this->move(QPoint(650, 500));
 
     timer = new QTimer;
-    connect(timer, &QTimer::timeout,dpWindow, &DPWindow::updateProgressBar);
     connect(timer, &QTimer::timeout, this, &MainWindow::EventTick);
     timer->start(1000);
 }

@@ -98,14 +98,6 @@ void DPWindow::updateKitsCount(int firstKitCount, int secondKitCount)
 	ui.SecondKitCountLabel->setText(QString::number(secondKitCount));
 }
 
-void DPWindow::updateProgressBar()
-{
-	for(int i = 0; i < ProgressBarArray.count(); i++)
-	{
-		ProgressBarArray[i]->setValue(ProgressBarArray[i]->value() + 1);
-	}
-}
-
 void DPWindow::clearGridLayout()
 {
 	for each (auto var in ProgressBarArray)
