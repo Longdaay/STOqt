@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     openControlWindow();
     openDPWindow();
-    this->move(QPoint(650, 500));
+    this->move(QPoint(650, 600));
 
     timer = new QTimer;
     connect(timer, &QTimer::timeout, this, &MainWindow::EventTick);
@@ -26,7 +26,7 @@ void MainWindow::openControlWindow()
         controlWindow = new ControlWindow;
         controlWindow->activateWindow();
         controlWindow->show();
-        controlWindow->move(QPoint(1000, 500));
+        controlWindow->move(QPoint(1000, 600));
         connect(controlWindow, &ControlWindow::addKitCar, this, &MainWindow::addKitCar);
         connect(controlWindow, &ControlWindow::clearCWReference, this, &MainWindow::clearCWReference);
     }

@@ -28,6 +28,8 @@ void DPWindow::addCar(Auto carInfo)
 	QProgressBar* secondtKitProgressBar;
 
 	ui.DPGridLayout->addWidget(autoIdLabel, gridRow, 0);
+	ui.DPGridLayout->setAlignment(autoIdLabel, Qt::AlignHCenter);
+	autoIdLabel->setFont(QFont("MS Shell Dlg 2", 14, 5));
 	bool bIsHaveCurrentKit = carInfo.getCurrentKit() != ESelectKit::none;
 
 	switch (carInfo.getUsedKits())
@@ -43,7 +45,10 @@ void DPWindow::addCar(Auto carInfo)
 		LabelArray.push_back(haveSecondKitLabel);
 
 		ui.DPGridLayout->addWidget(firstKitProgressBar, gridRow, 1);
+		ui.DPGridLayout->setAlignment(firstKitProgressBar, Qt::AlignHCenter);
 		ui.DPGridLayout->addWidget(haveSecondKitLabel, gridRow, 2);
+		ui.DPGridLayout->setAlignment(haveSecondKitLabel, Qt::AlignHCenter);
+		haveSecondKitLabel->setFont(QFont("MS Shell Dlg 2", 14, 5));
 		break;
 
 	case ESelectKit::second:
@@ -58,7 +63,10 @@ void DPWindow::addCar(Auto carInfo)
 
 
 		ui.DPGridLayout->addWidget(haveFirstKitLabel, gridRow, 1);
+		ui.DPGridLayout->setAlignment(haveFirstKitLabel, Qt::AlignHCenter);
+		haveFirstKitLabel->setFont(QFont("MS Shell Dlg 2", 14, 5));
 		ui.DPGridLayout->addWidget(secondtKitProgressBar, gridRow, 2);
+		ui.DPGridLayout->setAlignment(secondtKitProgressBar, Qt::AlignHCenter);
 		break;
 
 	case ESelectKit::both:
@@ -83,7 +91,9 @@ void DPWindow::addCar(Auto carInfo)
 		}
 
 		ui.DPGridLayout->addWidget(firstKitProgressBar, gridRow, 1);
+		ui.DPGridLayout->setAlignment(firstKitProgressBar, Qt::AlignHCenter);
 		ui.DPGridLayout->addWidget(secondtKitProgressBar, gridRow, 2);
+		ui.DPGridLayout->setAlignment(secondtKitProgressBar, Qt::AlignHCenter);
 		break;
 	default:
 		break;
